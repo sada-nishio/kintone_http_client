@@ -1,0 +1,69 @@
+body {
+    text-align: center;
+    background: beige;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #8c8a8b;
+}
+
+h1 {
+      font-size: 40px;
+      font-family: 'Engagement', cursive;
+      font-weight: 300;
+      line-height: 1.89em;    
+}
+
+input {
+    border: 1px solid #c7c7c7;
+    outline: 5px solid rgba(0, 0, 0, 0.1);
+    padding: 3px 5px;
+    background: #fff;
+    font-size: 1em;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+
+textarea {
+    border: 1px solid #c7c7c7;
+    outline: 5px solid rgba(0, 0, 0, 0.1);
+    padding: 3px 5px;
+    background: #fff;
+    font-size: 1em;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #8c8a8b;
+}
+
+.parm-box, .header-box {
+    position: static;
+}
+
+.parm-value, .header-value {
+    position: relative;
+    left: 30px;
+}
+
+.split-el {
+    position: relative;
+    left: 15px;    
+}
+
+.add-row  {
+    position: relative;
+    left: 50px;
+    cursor: pointer;
+}
+
+.delete-row {
+    position: relative;
+    left: 55px;
+    cursor: pointer;
+}
+
+#cancel {
+    position: relative;
+    left: 30px;        
+}

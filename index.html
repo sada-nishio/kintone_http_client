@@ -1,0 +1,70 @@
+<!doctype html>
+	<head>
+		<title>HTTP Client Tool</title>
+		<meta charset="UTF-8" />
+		<script type="text/javascript" src="https://js.cybozu.com/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/formatXML.js"></script>
+		<script type="text/javascript" src="js/makeForm.js"></script>
+		<link rel="stylesheet" href="css/51-jp-default.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<h1>HTTP Client Tool (made by PHP)</h1><br />
+		<div id="request-form">
+			<h2>- - - - - - - - - - - - - - - - - - - - - - - - - - - Request - - - - - - - - - - - - - - - - - - - - - - - - - - -</h2>
+			<div  class="block">
+				<p>Request URL</p>
+				<input type="text" id="req-url" size="100" placeholder="ex. https://sub-domain.cybozu.com/k/v1/records.json">
+			</div>
+
+			<div class="block">
+				<p>Request Method</p>
+				<div class="kintoneplugin-select-outer">
+					<div class="kintoneplugin-select">
+						<select id="req-method">
+							<option>GET</option>
+							<option>POST</option>
+							<option>PUT</option>
+							<option>DELETE</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<!--
+			<div id="req-urlparms" class="block"><p>URL Parameters(still not implemented.)</p></div>
+			-->
+			<div id="req-headers" class="block"><p>Request Headers</p></div>
+			<div id="req-body" class="block">
+				<p>Request Body(String)</p>
+				<textarea cols="100" rows="10" id="req-body-txt"></textarea>
+			</div>
+			<p> </p>
+			<button id="submit" class="kintoneplugin-button-dialog-ok">Send</button><button id="cancel" class="kintoneplugin-button-dialog-cancel">Cancel</button>
+		</div>
+		<br /><br />
+		<div id="responses">
+			<h2>- - - - - - - - - - - - - - - - - - - - - - - - - - - Response - - - - - - - - - - - - - - - - - - - - - - - - - - -</h2>
+			<div id="resp1" class="block">
+				<p>HTTP Status</p>
+				<input type="text" id="resp-status" size="40">
+			</div>
+			<div id="resp2" class="block">
+				<p>Response Header</p>
+				<textarea cols="100" rows="10" id="resp-headers"></textarea>
+			</div>
+			<div id="resp3" class="block">
+				<p>Response Body</p>
+				<textarea cols="100" rows="15" id="resp-body"></textarea>
+			</div>
+			<br /><br />
+		</div>
+		<datalist id="head-key">
+			<option value="Content-Type">
+			<option value="X-Cybozu-Authorization">
+			<option value="X-Cybozu-API-Token">
+		</datalist>
+		<datalist id="head-value">
+			<option value="application/json">
+		</datalist>
+	</body>
+</html>
