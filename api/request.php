@@ -1,7 +1,9 @@
 <?php
-
+    
 // HTTP Request2
-require_once 'HTTP/Request2.php';
+set_include_path(".;C:\php\pear;D:\home\site\wwwroot\api\HTTP");
+
+require_once('Request2.php');
 
 //header("Content-Type: application/json; charset=utf-8");
 header("Content-Type: text; charset=utf-8");
